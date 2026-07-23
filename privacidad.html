@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Política de privacidad — Menú Semanal</title>
+  <title>Política de privacidad — MenuPlan AI</title>
   <style>
     :root { color-scheme: light dark; }
     body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #1A2438; background: #F8F3E7; }
@@ -14,38 +14,49 @@
   </style>
 </head>
 <body>
-  <h1>Política de privacidad — Menú Semanal</h1>
-  <p class="muted">Última actualización: 11 de junio de 2026</p>
+  <h1>Política de privacidad — MenuPlan AI</h1>
+  <p class="muted">Última actualización: 23 de julio de 2026</p>
 
-  <p>Esta política explica qué datos trata la aplicación móvil <strong>Menú Semanal</strong> ("la app") y cómo ejercer tus derechos. Léela antes de usar la app.</p>
+  <p>Esta política explica qué datos trata la aplicación móvil <strong>MenuPlan AI</strong> ("la app") y cómo ejercer tus derechos. Léela antes de usar la app.</p>
 
   <h2>1. Responsable del tratamiento</h2>
   <p>Responsable: <strong>Manuel Domínguez Vázquez</strong>. Contacto: <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>.</p>
 
   <h2>2. Qué datos recogemos</h2>
   <ul>
-    <li><strong>Datos de tu cuenta de Google</strong> (al iniciar sesión): tu dirección de correo electrónico, tu nombre visible y un identificador de usuario (UID). Es necesario para autenticarte y sincronizar tus datos entre dispositivos.</li>
-    <li><strong>Contenido que tú creas en la app</strong>: tus recetas, el menú semanal, la lista de la compra, los pasillos y la despensa de tu "hogar".</li>
+    <li><strong>Datos de tu cuenta</strong> (al iniciar sesión con Google o con correo y contraseña): tu dirección de correo electrónico, tu nombre visible y un identificador de usuario (UID). Es necesario para autenticarte y sincronizar tus datos entre dispositivos.</li>
+    <li><strong>Contenido que tú creas en la app</strong>: tus recetas (incluida la URL de origen cuando la guardas), menús e historial, lista de la compra, pasillos, despensa, patrones, preferencias, valoraciones, marcas de platos completados y asignaciones de tu hogar.</li>
+    <li><strong>Funciones de IA (opcionales)</strong>: solo si las usas, el contenido que envías para procesar (la <em>foto</em> o el <em>texto</em> de una receta, o el nombre de un plato o ingrediente) se transmite a nuestro servicio de IA para extraer la receta, sugerir el pasillo o generar los pasos. No se usa para entrenar modelos y no enviamos a los modelos tu correo, nombre ni UID.</li>
+    <li><strong>Mensajes de contacto (opcionales)</strong>: si nos escribes desde el formulario de la app, tratamos tu mensaje y la dirección de correo de respuesta para atenderte.</li>
+    <li><strong>Analítica seudónima (opcional)</strong>: Firebase Analytics trata interacciones y sesiones de uso, un identificador aleatorio de instancia de la app, datos básicos del dispositivo, ubicación aproximada derivada de la dirección IP y, si falla una sincronización, el evento y un código técnico de error. No enviamos tu UID, correo ni recetas a Analytics. Puedes desactivarla en <strong>Ajustes</strong>.</li>
+    <li><strong>Avisos del hogar (opcionales)</strong>: si los activas, tratamos un token de Firebase Cloud Messaging, el idioma y el nombre visible del miembro que realiza la acción para enviar la notificación al otro miembro del hogar.</li>
   </ul>
-  <p>No recogemos ubicación, contactos, ni identificadores de publicidad. La app es <strong>gratuita y sin anuncios</strong>.</p>
+  <p>No recogemos ubicación precisa, contactos ni identificadores de publicidad. La app es <strong>gratuita y sin anuncios</strong>.</p>
 
   <h2>3. Finalidad y base legal</h2>
-  <p>Tratamos estos datos únicamente para prestarte el servicio (autenticación y sincronización de tu menú/recetas/lista entre tus dispositivos y, si lo deseas, con la pareja de tu "hogar"). La base legal es la <strong>ejecución del servicio que solicitas</strong> y tu <strong>consentimiento</strong> al iniciar sesión.</p>
+  <p>Tratamos estos datos para prestarte el servicio (autenticación y sincronización de tu menú, recetas y lista entre tus dispositivos y, si lo deseas, con tu hogar), atender tus mensajes, enviar los avisos que actives, proteger el servicio frente a abusos y mejorar la app mediante estadísticas de uso. Las bases aplicables son la <strong>ejecución del servicio que solicitas</strong>, tu <strong>consentimiento</strong> para las funciones opcionales y el <strong>interés legítimo</strong> en mantener y mejorar un servicio seguro.</p>
 
-  <h2>4. Encargado del tratamiento (terceros)</h2>
-  <p>Usamos <strong>Google Firebase</strong> (Authentication y Cloud Firestore) como proveedor para autenticación y almacenamiento en la nube. Google actúa como encargado del tratamiento. Los datos viajan cifrados (TLS). Consulta la privacidad de Google en <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>. No vendemos ni cedemos tus datos a terceros con fines publicitarios.</p>
+  <h2>4. Encargados del tratamiento (terceros)</h2>
+  <p>Nos apoyamos en los siguientes proveedores, que actúan como encargados del tratamiento. Los datos viajan cifrados (TLS) y no vendemos ni cedemos tus datos a terceros con fines publicitarios:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore, Analytics y Cloud Messaging): autenticación, almacenamiento en la nube de tu hogar, analítica seudónima y avisos. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacidad de Firebase</a>.</li>
+    <li><strong>Cloudflare</strong> (Workers y Workers AI): aloja nuestro servicio de IA y procesa el texto/nombre de las recetas y la sugerencia de pasillos. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Privacidad de Cloudflare</a>.</li>
+    <li><strong>Anthropic</strong> (Claude): procesa las fotos de recetas y puede actuar como proveedor de respaldo para texto, ingredientes, pasillos, instrucciones o macros cuando Workers AI no devuelve un resultado válido. No usa tus datos para entrenar sus modelos. <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Privacidad de Anthropic</a>.</li>
+    <li><strong>Resend</strong>: envía a nuestro buzón los mensajes que escribes desde el formulario de contacto. <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">Privacidad de Resend</a>.</li>
+  </ul>
+  <p>Algunos de estos proveedores están en <strong>EE. UU.</strong>; las transferencias internacionales se amparan en las garantías adecuadas previstas por el RGPD (cláusulas contractuales tipo). Las funciones de IA, contacto y avisos solo transmiten su contenido específico cuando tú las usas o activas.</p>
 
   <h2>5. Conservación</h2>
-  <p>Conservamos tus datos mientras mantengas tu cuenta. Si borras tu cuenta (ver sección 7), se eliminan de forma permanente.</p>
+  <p>Los datos de cuenta y el contenido sincronizado se conservan mientras mantengas tu cuenta. Los tokens de avisos se eliminan cuando desactivas la función o borras la cuenta. Los mensajes de contacto se conservan durante el tiempo necesario para atender la solicitud y cumplir obligaciones legales. Los datos de Analytics son seudónimos y siguen la retención configurada en Google Analytics; desactivar la analítica detiene la recogida futura. Los proveedores de IA pueden conservar entradas y salidas durante sus plazos de seguridad: la retención estándar de la API de Anthropic es de hasta 30 días, salvo excepciones por seguridad o ley.</p>
 
   <h2>6. Tus derechos (RGPD)</h2>
   <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>. También puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</p>
 
   <h2>7. Cómo borrar tu cuenta y tus datos</h2>
-  <p>Desde la propia app: <strong>Ajustes → Borrar mi cuenta y datos</strong>. Esto elimina tu cuenta y tus datos de forma permanente (si eres el único miembro del hogar, también sus recetas, menú y lista). Alternativamente, puedes solicitarlo en <a href="borrar-datos.html">esta página</a> o escribiendo a <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>.</p>
+  <p>Desde la propia app: <strong>Ajustes → Borrar mi cuenta y datos</strong>. Esto elimina tu cuenta y el contenido asociado en Firebase (si eres el único miembro del hogar, también sus recetas, menú y lista). Alternativamente, puedes solicitarlo en <a href="borrar-datos.html">esta página</a> o escribiendo a <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>. Los datos seudónimos de Analytics, los mensajes de soporte y los datos ya enviados a proveedores siguen los plazos indicados en la sección 5.</p>
 
   <h2>8. Menores</h2>
-  <p>La app no está dirigida a menores de 14 años y no recoge conscientemente sus datos.</p>
+  <p>La app está dirigida a personas adultas y no está destinada a menores de 18 años. No recogemos conscientemente datos de menores.</p>
 
   <h2>9. Cambios</h2>
   <p>Podemos actualizar esta política; publicaremos la nueva versión en esta misma dirección con su fecha.</p>
