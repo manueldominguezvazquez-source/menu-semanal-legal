@@ -8,6 +8,7 @@
     :root { color-scheme: light dark; }
     body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #1A2438; background: #F8F3E7; }
     @media (prefers-color-scheme: dark) { body { background: #1A2922; color: #F8F3E7; } a { color: #E89B6C; } }
+    table { border-collapse: collapse; width: 100%; font-size: .9rem; } th, td { border: 1px solid rgba(127,127,127,.4); padding: 6px 8px; text-align: left; vertical-align: top; }
     h1 { font-size: 1.8rem; } h2 { margin-top: 2rem; font-size: 1.2rem; }
     code { background: rgba(127,127,127,.15); padding: 1px 5px; border-radius: 4px; }
     .muted { opacity: .7; font-size: .9rem; }
@@ -15,7 +16,7 @@
 </head>
 <body>
   <h1>Política de privacidad — MenuPlan AI</h1>
-  <p class="muted">Última actualización: 23 de julio de 2026</p>
+  <p class="muted">Última actualización: 20 de octubre de 2026</p>
 
   <p>Esta política explica qué datos trata la aplicación móvil <strong>MenuPlan AI</strong> ("la app") y cómo ejercer tus derechos. Léela antes de usar la app.</p>
 
@@ -26,34 +27,48 @@
   <ul>
     <li><strong>Datos de tu cuenta</strong> (al iniciar sesión con Google o con correo y contraseña): tu dirección de correo electrónico, tu nombre visible y un identificador de usuario (UID). Es necesario para autenticarte y sincronizar tus datos entre dispositivos.</li>
     <li><strong>Contenido que tú creas en la app</strong>: tus recetas (incluida la URL de origen cuando la guardas), menús e historial, lista de la compra, pasillos, despensa, patrones, preferencias, valoraciones, marcas de platos completados y asignaciones de tu hogar.</li>
-    <li><strong>Funciones de IA (opcionales)</strong>: solo si las usas, el contenido que envías para procesar (la <em>foto</em> o el <em>texto</em> de una receta, o el nombre de un plato o ingrediente) se transmite a nuestro servicio de IA para extraer la receta, sugerir el pasillo o generar los pasos. No se usa para entrenar modelos y no enviamos a los modelos tu correo, nombre ni UID.</li>
-    <li><strong>Mensajes de contacto (opcionales)</strong>: si nos escribes desde el formulario de la app, tratamos tu mensaje y la dirección de correo de respuesta para atenderte.</li>
-    <li><strong>Analítica seudónima (opcional)</strong>: Firebase Analytics trata interacciones y sesiones de uso, un identificador aleatorio de instancia de la app, datos básicos del dispositivo, ubicación aproximada derivada de la dirección IP y, si falla una sincronización, el evento y un código técnico de error. No enviamos tu UID, correo ni recetas a Analytics. Puedes desactivarla en <strong>Ajustes</strong>.</li>
-    <li><strong>Avisos del hogar (opcionales)</strong>: si los activas, tratamos un token de Firebase Cloud Messaging, el idioma y el nombre visible del miembro que realiza la acción para enviar la notificación al otro miembro del hogar.</li>
+    <li><strong>Funciones de IA (opcionales)</strong>: solo si las usas, se envía a nuestro servicio de IA el contenido necesario: la foto o el texto de una receta, el nombre de un plato, el nombre de un ingrediente o la lista de ingredientes para sugerir pasillos, escribir los pasos o estimar calorías y macros; para sugerir pasillos se envían también los nombres de los pasillos de tu hogar. Al importar una receta se envía además el número de raciones habitual de tu hogar. Para verificar tu sesión, el servicio recibe también tu token de Firebase (que incluye, entre otros datos, tu UID, correo y nombre), pero esos datos no se envían a los modelos de IA. No se usa para entrenar modelos.</li>
+    <li><strong>Mensajes de contacto (opcionales)</strong>: tratamos tu mensaje, el correo de tu cuenta como dirección de respuesta, tu nombre visible y la versión de la app.</li>
+    <li><strong>Analítica seudónima (solo con tu consentimiento)</strong>: Solo si la aceptas en la app (te lo preguntamos una vez), Firebase Analytics trata interacciones y sesiones de uso, un identificador aleatorio de instancia de la app, datos básicos del dispositivo, ubicación aproximada derivada de la dirección IP y, si falla una sincronización, el evento y un código técnico de error. Con el mismo consentimiento, si la app sufre un fallo, enviamos un diagnóstico mínimo (dónde ocurrió, la pantalla y un mensaje técnico de hasta 90 caracteres en el que procuramos que no se incluyan correos ni identificadores largos, con un máximo de 5 por sesión). Hasta que aceptes, la app mantiene la recogida desactivada. Esto es así desde la versión 1.2.6: las versiones anteriores traían la analítica activada de serie, con la opción de desactivarla en Ajustes, y al actualizar te pedimos el consentimiento. Si actualizaste desde una versión anterior, en el primer arranque Firebase Analytics puede registrar algún evento técnico automático (como la propia actualización) antes de que la app aplique tu elección; si no aceptas, se descarta. No enviamos tu UID, correo ni recetas a Analytics. Puedes retirar tu consentimiento en cualquier momento en Ajustes → Cuenta → Estadísticas de uso; desde ese momento dejamos de recoger datos.</li>
+    <li><strong>Avisos del hogar (opcionales)</strong>: si los activas, tratamos un token de Firebase Cloud Messaging, el idioma, tus preferencias por tipo de aviso y el nombre visible del miembro que realiza la acción para enviar únicamente las notificaciones que hayas elegido. En los avisos de altas manuales en la compra se incluyen, como máximo, los nombres de tres productos.</li>
+    <li><strong>Control de uso del servicio de IA</strong>: para evitar abusos guardamos contadores de uso (IA, mensajes de contacto y avisos) asociados a tu UID, que se borran solos a las 48 horas, y, para no repetir cálculos, una caché de resultados de pasillos, pasos y macros durante 30 días que no contiene datos de tu cuenta.</li>
   </ul>
   <p>No recogemos ubicación precisa, contactos ni identificadores de publicidad. La app es <strong>gratuita y sin anuncios</strong>.</p>
 
-  <h2>3. Finalidad y base legal</h2>
-  <p>Tratamos estos datos para prestarte el servicio (autenticación y sincronización de tu menú, recetas y lista entre tus dispositivos y, si lo deseas, con tu hogar), atender tus mensajes, enviar los avisos que actives, proteger el servicio frente a abusos y mejorar la app mediante estadísticas de uso. Las bases aplicables son la <strong>ejecución del servicio que solicitas</strong>, tu <strong>consentimiento</strong> para las funciones opcionales y el <strong>interés legítimo</strong> en mantener y mejorar un servicio seguro.</p>
+  <h2>Qué ven los miembros de tu hogar</h2>
+  <p>Si compartes un hogar, sus miembros ven tu nombre visible, el contenido del hogar (recetas, menús, lista y preferencias), tus valoraciones de recetas, quién añadió o tiene asignado cada producto, quién cocina cada comida y quién generó el menú. El documento del hogar guarda también tu idioma, tus preferencias de avisos y, si los activas, tu token de avisos.</p>
+
+  <h2>3. Finalidad, base legal y plazo</h2>
+  <table>
+    <thead><tr><th>Finalidad</th><th>Datos</th><th>Base legal</th><th>Plazo</th></tr></thead>
+    <tbody>
+      <tr><td>Cuenta, sincronización y hogar</td><td>Cuenta y contenido</td><td>Ejecución del servicio que solicitas (art. 6.1.b RGPD)</td><td>Mientras mantengas la cuenta</td></tr>
+      <tr><td>Funciones de IA</td><td>Foto, texto, nombres e ingredientes</td><td>Ejecución del servicio que solicitas</td><td>Anthropic hasta 30 días; caché de resultados 30 días</td></tr>
+      <tr><td>Avisos del hogar</td><td>Token, idioma, preferencias, nombre y hasta tres productos</td><td>Consentimiento (los activas tú)</td><td>Hasta que los desactives o borres la cuenta</td></tr>
+      <tr><td>Contacto</td><td>Mensaje, correo, nombre y versión</td><td>Tu solicitud (consentimiento)</td><td>Hasta 12 meses tras atenderla</td></tr>
+      <tr><td>Analítica y diagnóstico de fallos</td><td>Ver sección 2</td><td>Consentimiento (art. 6.1.a RGPD y art. 22.2 LSSI)</td><td>La retención configurada en Google Analytics: <strong>2 meses</strong></td></tr>
+      <tr><td>Prevención de abusos</td><td>UID y contador diario</td><td>Interés legítimo en proteger el servicio</td><td>48 horas</td></tr>
+    </tbody>
+  </table>
 
   <h2>4. Encargados del tratamiento (terceros)</h2>
   <p>Nos apoyamos en los siguientes proveedores, que actúan como encargados del tratamiento. Los datos viajan cifrados (TLS) y no vendemos ni cedemos tus datos a terceros con fines publicitarios:</p>
   <ul>
     <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore, Analytics y Cloud Messaging): autenticación, almacenamiento en la nube de tu hogar, analítica seudónima y avisos. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacidad de Firebase</a>.</li>
-    <li><strong>Cloudflare</strong> (Workers y Workers AI): aloja nuestro servicio de IA y procesa el texto/nombre de las recetas y la sugerencia de pasillos. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Privacidad de Cloudflare</a>.</li>
+    <li><strong>Cloudflare</strong> (Workers, Workers AI y KV): aloja nuestro servicio de IA, el envío de mensajes de contacto y de avisos; procesa el contenido de las funciones de IA, recibe tu token de sesión para verificar la cuenta y guarda el contador de usos y la caché descritos arriba. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Privacidad de Cloudflare</a>.</li>
     <li><strong>Anthropic</strong> (Claude): procesa las fotos de recetas y puede actuar como proveedor de respaldo para texto, ingredientes, pasillos, instrucciones o macros cuando Workers AI no devuelve un resultado válido. No usa tus datos para entrenar sus modelos. <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Privacidad de Anthropic</a>.</li>
     <li><strong>Resend</strong>: envía a nuestro buzón los mensajes que escribes desde el formulario de contacto. <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">Privacidad de Resend</a>.</li>
   </ul>
   <p>Algunos de estos proveedores están en <strong>EE. UU.</strong>; las transferencias internacionales se amparan en las garantías adecuadas previstas por el RGPD (cláusulas contractuales tipo). Las funciones de IA, contacto y avisos solo transmiten su contenido específico cuando tú las usas o activas.</p>
 
   <h2>5. Conservación</h2>
-  <p>Los datos de cuenta y el contenido sincronizado se conservan mientras mantengas tu cuenta. Los tokens de avisos se eliminan cuando desactivas la función o borras la cuenta. Los mensajes de contacto se conservan durante el tiempo necesario para atender la solicitud y cumplir obligaciones legales. Los datos de Analytics son seudónimos y siguen la retención configurada en Google Analytics; desactivar la analítica detiene la recogida futura. Los proveedores de IA pueden conservar entradas y salidas durante sus plazos de seguridad: la retención estándar de la API de Anthropic es de hasta 30 días, salvo excepciones por seguridad o ley.</p>
+  <p>Los plazos por finalidad son los de la tabla de la sección 3. Además, los datos de Analytics son seudónimos y retirar el consentimiento detiene la recogida desde ese momento, y los proveedores de IA pueden conservar entradas y salidas durante sus plazos de seguridad, salvo excepciones por seguridad o ley.</p>
 
   <h2>6. Tus derechos (RGPD)</h2>
-  <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>. También puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</p>
+  <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>. Puedes retirar en cualquier momento tu consentimiento para la analítica y los avisos desde Ajustes, sin que afecte a la licitud de lo tratado antes. También puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</p>
 
   <h2>7. Cómo borrar tu cuenta y tus datos</h2>
-  <p>Desde la propia app: <strong>Ajustes → Borrar mi cuenta y datos</strong>. Esto elimina tu cuenta y el contenido asociado en Firebase (si eres el único miembro del hogar, también sus recetas, menú y lista). Alternativamente, puedes solicitarlo en <a href="borrar-datos.html">esta página</a> o escribiendo a <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>. Los datos seudónimos de Analytics, los mensajes de soporte y los datos ya enviados a proveedores siguen los plazos indicados en la sección 5.</p>
+  <p>Desde la propia app: <strong>Ajustes → Borrar mi cuenta y datos</strong>. Esto elimina tu cuenta y tu pertenencia al hogar; si eres el único miembro, también sus recetas, menú y lista. Si compartes hogar, su contenido (incluidas las recetas que añadiste) se queda para los demás miembros, y tus valoraciones y las marcas de quién añadió, tiene asignado, cocina o generó algo quedan asociadas solo a un identificador interno, sin tu nombre ni tu correo. Alternativamente, puedes solicitarlo en <a href="borrar-datos.html">esta página</a> o escribiendo a <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>. Los datos seudónimos de Analytics, los mensajes de soporte y los datos ya enviados a proveedores siguen los plazos indicados en la sección 3.</p>
 
   <h2>8. Menores</h2>
   <p>La app está dirigida a personas adultas y no está destinada a menores de 18 años. No recogemos conscientemente datos de menores.</p>
