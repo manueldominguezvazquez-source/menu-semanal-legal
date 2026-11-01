@@ -16,9 +16,9 @@
 </head>
 <body>
   <h1>Política de privacidad — MenuPlan AI</h1>
-  <p class="muted">Última actualización: 20 de octubre de 2026</p>
+  <p class="muted">Última actualización: 31 de octubre de 2026</p>
 
-  <p>Esta política explica qué datos trata la aplicación móvil <strong>MenuPlan AI</strong> ("la app") y cómo ejercer tus derechos. Léela antes de usar la app.</p>
+  <p>Esta política explica qué datos tratan la aplicación móvil <strong>MenuPlan AI</strong> ("la app") y su web pública ("la web", ver <a href="#web">La web pública</a>), y cómo ejercer tus derechos. Léela antes de usar la app o la web.</p>
 
   <h2>1. Responsable del tratamiento</h2>
   <p>Responsable: <strong>Manuel Domínguez Vázquez</strong>. Contacto: <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>.</p>
@@ -38,6 +38,15 @@
   <h2>Qué ven los miembros de tu hogar</h2>
   <p>Si compartes un hogar, sus miembros ven tu nombre visible, el contenido del hogar (recetas, menús, lista y preferencias), tus valoraciones de recetas, quién añadió o tiene asignado cada producto, quién cocina cada comida y quién generó el menú. El documento del hogar guarda también tu idioma, tus preferencias de avisos y, si los activas, tu token de avisos.</p>
 
+  <h2 id="web">La web pública</h2>
+  <p>La web <a href="https://menuplan-ai.aikitconsultoria.chatgpt.site">menuplan-ai.aikitconsultoria.chatgpt.site</a> presenta la app. No tiene cuentas ni formularios que envíen datos, y su propio código no carga anuncios, tipografías ni scripts de otras empresas. Trata estos datos:</p>
+  <ul>
+    <li><strong>Alojamiento y registros técnicos</strong>: la web la aloja OpenAI (servicio Sites) sobre la infraestructura de Cloudflare. Como con cualquier servidor web, el alojamiento recibe tu dirección IP, los datos de tu navegador y la dirección de la página que pides, para servir la página y proteger la web frente a abusos. Nosotros no guardamos esos registros; los conserva el proveedor según sus condiciones de servicio.</li>
+    <li><strong>Protección frente a bots</strong>: Cloudflare, el proveedor de infraestructura del alojamiento, añade a cada página un pequeño script suyo (servido desde <code>/cdn-cgi/challenge-platform/</code>) que comprueba si el navegador lo usa una persona o un bot y le envía esas señales. También pone la cookie técnica <code>__cf_bm</code>, que caduca tras 30 minutos de inactividad y se envía a todas las webs alojadas en <code>chatgpt.site</code>, y puede poner la cookie <code>cf_clearance</code>, donde guarda el resultado de esa comprobación. Cloudflare las considera estrictamente necesarias para la seguridad del servicio. Nosotros no las leemos ni las usamos para medir. <a href="https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/" target="_blank" rel="noopener">Cookies de Cloudflare</a>.</li>
+    <li><strong>Medición agregada propia</strong>: la web cuenta, por día, las visitas a cada página y algunos clics en sus botones y enlaces (como el de Google Play), junto con el canal de llegada (por ejemplo Pinterest, Google o directo) y si se trata de una prueba nuestra. Para ello, un script propio lee en tu navegador la página de procedencia y el parámetro <code>utm_source</code> de la dirección para deducir el canal, y envía a la propia web solo la página, el evento, el botón o enlace, el canal y si es una prueba; el alojamiento trata esa petición como cualquier otra. Solo se guardan los totales diarios: sin cookies ni almacenamiento en tu dispositivo y sin tu dirección IP, la URL completa, la página de procedencia ni identificadores de visitante, así que no permiten saber quién visitó la web. Los totales de más de 180 días se borran por lotes cuando llegan nuevos eventos, no en una fecha fija. No medimos nada si tu navegador envía la señal Do Not Track o Global Privacy Control, y puedes desactivar la medición durante tu navegación con el enlace «Desactivar la medición durante esta navegación», en el apartado «Sobre la medición de esta web» del pie de cada página.</li>
+    <li><strong>Plantilla semanal</strong>: lo que escribes en la plantilla de menú se guarda solo en el almacenamiento local de tu navegador (localStorage) para que puedas seguir editándolo; no se envía a ningún servidor ni se sincroniza con la app. Puedes borrarlo con «Vaciar plantilla» o borrando los datos del sitio en tu navegador.</li>
+  </ul>
+
   <h2>3. Finalidad, base legal y plazo</h2>
   <table>
     <thead><tr><th>Finalidad</th><th>Datos</th><th>Base legal</th><th>Plazo</th></tr></thead>
@@ -48,6 +57,9 @@
       <tr><td>Contacto</td><td>Mensaje, correo, nombre y versión</td><td>Tu solicitud (consentimiento)</td><td>Hasta 12 meses tras atenderla</td></tr>
       <tr><td>Analítica y diagnóstico de fallos</td><td>Ver sección 2</td><td>Consentimiento (art. 6.1.a RGPD y art. 22.2 LSSI)</td><td>La retención configurada en Google Analytics: <strong>2 meses</strong></td></tr>
       <tr><td>Prevención de abusos</td><td>UID y contador diario</td><td>Interés legítimo en proteger el servicio</td><td>48 horas</td></tr>
+      <tr><td>Servir la web y protegerla de abusos</td><td>IP, datos del navegador, página pedida, señales del script de Cloudflare y cookies técnicas <code>__cf_bm</code> y <code>cf_clearance</code></td><td>Interés legítimo en ofrecer una web segura (art. 6.1.f RGPD)</td><td>Registros: según las condiciones del proveedor de alojamiento; <code>__cf_bm</code>: 30 minutos de inactividad</td></tr>
+      <tr><td>Medición agregada de la web</td><td>Totales diarios por página, evento, botón o enlace, canal y tipo de muestra, sin identificadores</td><td>Interés legítimo en saber de forma agregada qué páginas y canales funcionan (art. 6.1.f RGPD); puedes oponerte (sección 6)</td><td>180 días; después se borran por lotes al llegar nuevos eventos</td></tr>
+      <tr><td>Plantilla semanal de la web</td><td>Lo que escribes en ella</td><td>No la tratamos: se guarda solo en tu navegador, porque lo necesita el servicio que pides</td><td>Hasta que la vacíes o borres los datos del navegador</td></tr>
     </tbody>
   </table>
 
@@ -60,15 +72,16 @@
     <li><strong>Resend</strong>: envía a nuestro buzón los mensajes que escribes desde el formulario de contacto. <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">Privacidad de Resend</a>.</li>
   </ul>
   <p>Algunos de estos proveedores están en <strong>EE. UU.</strong>; las transferencias internacionales se amparan en las garantías adecuadas previstas por el RGPD (cláusulas contractuales tipo). Las funciones de IA, contacto y avisos solo transmiten su contenido específico cuando tú las usas o activas.</p>
+  <p>La web pública la aloja <strong>OpenAI</strong> (servicio Sites) sobre la infraestructura de <strong>Cloudflare</strong>, dos empresas de EE. UU. El alojamiento sirve la web, guarda los totales de su medición agregada y aplica la protección frente a bots descrita en <a href="#web">La web pública</a>, según sus condiciones de servicio.</p>
 
   <h2>5. Conservación</h2>
   <p>Los plazos por finalidad son los de la tabla de la sección 3. Además, los datos de Analytics son seudónimos y retirar el consentimiento detiene la recogida desde ese momento, y los proveedores de IA pueden conservar entradas y salidas durante sus plazos de seguridad, salvo excepciones por seguridad o ley.</p>
 
   <h2>6. Tus derechos (RGPD)</h2>
-  <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>. Puedes retirar en cualquier momento tu consentimiento para la analítica y los avisos desde Ajustes, sin que afecte a la licitud de lo tratado antes. También puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</p>
+  <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>. Puedes retirar en cualquier momento tu consentimiento para la analítica y los avisos desde Ajustes, sin que afecte a la licitud de lo tratado antes. Puedes oponerte a la medición de la web con las señales Do Not Track o Global Privacy Control de tu navegador o con el enlace «Desactivar la medición durante esta navegación» (apartado «Sobre la medición de esta web», al pie de cada página); como sus totales no identifican a nadie, no podemos localizar ni borrar las visitas de una persona concreta. También puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</p>
 
   <h2>7. Cómo borrar tu cuenta y tus datos</h2>
-  <p>Desde la propia app: <strong>Ajustes → Borrar mi cuenta y datos</strong>. Esto elimina tu cuenta y tu pertenencia al hogar; si eres el único miembro, también sus recetas, menú y lista. Si compartes hogar, su contenido (incluidas las recetas que añadiste) se queda para los demás miembros, y tus valoraciones y las marcas de quién añadió, tiene asignado, cocina o generó algo quedan asociadas solo a un identificador interno, sin tu nombre ni tu correo. Alternativamente, puedes solicitarlo en <a href="borrar-datos.html">esta página</a> o escribiendo a <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>. Los datos seudónimos de Analytics, los mensajes de soporte y los datos ya enviados a proveedores siguen los plazos indicados en la sección 3.</p>
+  <p>Desde la propia app: <strong>Ajustes → Cuenta → Borrar mi cuenta y datos</strong>. Esto elimina tu cuenta y tu pertenencia al hogar; si eres el único miembro, también sus recetas, menú y lista. Si compartes hogar, su contenido (incluidas las recetas que añadiste) se queda para los demás miembros, y tus valoraciones y las marcas de quién añadió, tiene asignado, cocina o generó algo quedan asociadas solo a un identificador interno, sin tu nombre ni tu correo. Alternativamente, puedes solicitarlo en <a href="borrar-datos.html">esta página</a> o escribiendo a <a href="mailto:manuel.dominguez.vazquez@gmail.com">manuel.dominguez.vazquez@gmail.com</a>. Los datos seudónimos de Analytics, los mensajes de soporte y los datos ya enviados a proveedores siguen los plazos indicados en la sección 3.</p>
 
   <h2>8. Menores</h2>
   <p>La app está dirigida a personas adultas y no está destinada a menores de 18 años. No recogemos conscientemente datos de menores.</p>
